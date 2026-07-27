@@ -10,7 +10,7 @@ GitHub: https://github.com/felixalguzman
 
 ## Summary
 
-Full Stack Developer with 8+ years of experience building web and desktop applications. Skilled in Java, Python, and JavaScript ecosystems including Spring Boot, Django, React, and Flutter. Proven track record of delivering scalable enterprise solutions and improving production line efficiency.
+Full Stack Developer with 8+ years of experience building web, mobile, and desktop applications. Skilled in Java, Python, and JavaScript ecosystems including Spring Boot, Django, React, and Flutter. Proven track record of delivering scalable enterprise solutions and improving production line efficiency.
 
 ---
 
@@ -18,29 +18,40 @@ Full Stack Developer with 8+ years of experience building web and desktop applic
 
 ### Full Stack Developer | AvatharTech
 **April 2025 - Present**
-- Develop web applications and APIs using Grails, React, Spring Boot, and Vaadin
-- Build scalable full-stack solutions for enterprise clients
+- Core developer of an insurance quoting and policy-issuance platform (vehicle and personal lines): Spring Boot + Vaadin backend, Next.js/React frontend
+- Maintain and extend the company's core ERP (Grails) and its ecosystem, including a cross-platform Flutter POS for Windows, Android, and iOS
+- Built an internal AI gateway (Spring Boot) centralizing AI model calls; contributed to a digital-pass management platform
+- Ship app releases to the App Store, Play Store, and Microsoft Store (signing certificates, release management)
 
-### Senior Software Developer | Clickping
+### Software Developer | Clickping
 **2023 - 2025**
-- Built a hotel incident-management platform in Django/React, routing direct notifications to insurance partners
-- Maintainable, clean code architecture
+- Built a hotel incident-management platform (Django, Celery, Redis, MySQL) routing incident notifications directly to insurance partners, with PDF report generation (WeasyPrint)
+- Developed ITRS, a ticket request system: Django REST API with CI pipelines (GitHub Actions, mypy, Ruff)
+- Built an async Telegram bot (aiogram) for ticket management: create/edit/cancel/track tickets, employee shift check-in/check-out, file and location submission (Dockerized)
 
-### Main Developer | Alterna
+### Lead Developer | Alterna
 **2018 - 2023**
-- Created systems communicating with multiple Human Machine Interfaces (HMIs)
-- Increased production line performance and efficiency by 50%+ using Spring Boot, PostgreSQL, and MQTT
-- Developed desktop application for mall electricity management using Flutter and ASP.NET Core
-- Maintained and enhanced web applications managing complete production line lifecycles using React and ASP.NET Core
+- Built Fill-Click, a real-time production monitoring platform for juice/milk filling machines — React frontend, ASP.NET Core web backend, and a Spring Boot service ingesting machine/HMI data over MQTT (PostgreSQL): live sensor dashboards, alarm email notifications, preventive-maintenance life-hour tracking, and exportable production/waste/efficiency reports — improving line performance via early maintenance alerts
+- Extended Fill-Click with a Flutter mobile app for machine operators, integrated with the web backend
+- Developed a desktop/Android tablet utility-billing app (Flutter, ASP.NET Core backend) for mall electricity management: meter readings, consumption calculation, invoice generation with PDF rendering, pending-balance tracking, meter and contract management, multi-company support
+---
+
+## Projects
+
+### Watch Insights
+Flutter companion app for a BLE smartwatch: reverse-engineered the proprietary BLE protocol (decompiled vendor SDK, BLE captures) after finding it silently uploaded ECG data to its cloud — rebuilt fully local, with live ECG waveform streaming, doctor-facing PDF export of ECG strips, and battery/charging-state inference.
+
+### Constellation
+Decentralized homelab hardware inventory and visual map in Go: one static binary per node, gossip-based sync between nodes, embedded web UI in TypeScript/React.
 
 ---
 
 ## Skills
 
-**Languages:** Java, Python, JavaScript, TypeScript, Dart, SQL
-**Frameworks:** Django, Spring Boot, React, Flutter, ASP.NET Core, Grails, Vaadin, Odoo, Frappe
+**Languages:** Java, Python, JavaScript, TypeScript, Dart, Go, SQL
+**Frameworks:** Django, Spring Boot, React, Flutter, ASP.NET Core, Grails, Vaadin, Odoo
 **Databases:** PostgreSQL, MySQL, Redis
-**Tools:** Docker, Git, GitHub Actions, MQTT, REST/WebSocket APIs
+**Tools:** Docker, Git, GitHub Actions, MQTT, REST/WebSocket APIs, AI-assisted development (Claude Code)
 **Languages (Spoken):** Spanish (Native), English (C2 Proficient)
 
 ---

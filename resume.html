@@ -28,7 +28,7 @@
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-size: 10pt;
-      line-height: 1.6;
+      line-height: 1.3;
       color: var(--text-dark);
       max-width: 8.5in;
       margin: 0 auto;
@@ -38,7 +38,7 @@
     .header {
       background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
       color: white;
-      padding: 14px 32px;
+      padding: 8px 32px;
       position: relative;
     }
 
@@ -56,11 +56,11 @@
       display: flex;
       align-items: baseline;
       gap: 12px;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
 
     h1 {
-      font-size: 20pt;
+      font-size: 18pt;
       font-weight: 700;
       letter-spacing: -0.5px;
       margin: 0;
@@ -104,21 +104,21 @@
     }
 
     .content {
-      padding: 12px 32px;
+      padding: 6px 32px;
     }
 
     .section {
-      margin-bottom: 8px;
+      margin-bottom: 2px;
     }
 
     h2 {
-      font-size: 10pt;
+      font-size: 9pt;
       font-weight: 700;
       color: var(--primary);
       text-transform: uppercase;
       letter-spacing: 1.5px;
-      margin-bottom: 8px;
-      padding-bottom: 5px;
+      margin-bottom: 3px;
+      padding-bottom: 2px;
       border-bottom: 2px solid var(--primary);
       display: flex;
       align-items: center;
@@ -132,18 +132,18 @@
     }
 
     .summary {
-      font-size: 9.5pt;
+      font-size: 9pt;
       color: var(--text-medium);
       text-align: justify;
-      line-height: 1.5;
-      padding: 10px 14px;
+      line-height: 1.3;
+      padding: 5px 12px;
       background: var(--bg-light);
       border-left: 3px solid var(--primary-light);
       border-radius: 0 6px 6px 0;
     }
 
     .job {
-      margin-bottom: 12px;
+      margin-bottom: 6px;
       padding-left: 12px;
       border-left: 2px solid var(--border);
       position: relative;
@@ -165,7 +165,7 @@
     }
 
     .job-title {
-      font-size: 10pt;
+      font-size: 9.5pt;
       font-weight: 600;
       color: var(--text-dark);
     }
@@ -184,13 +184,13 @@
 
     .job ul {
       margin-left: 14px;
-      margin-top: 3px;
+      margin-top: 2px;
     }
 
     .job li {
-      margin-bottom: 2px;
+      margin-bottom: 0;
       color: var(--text-medium);
-      font-size: 8.5pt;
+      font-size: 7.7pt;
     }
 
     .job li::marker {
@@ -206,7 +206,7 @@
 
     .skill-category {
       background: var(--bg-light);
-      padding: 6px 10px;
+      padding: 4px 10px;
       border-radius: 4px;
       border: 1px solid var(--border);
       flex: 1 1 45%;
@@ -224,7 +224,7 @@
     }
 
     .skill-list {
-      font-size: 8pt;
+      font-size: 7.5pt;
       color: var(--text-medium);
       line-height: 1.3;
     }
@@ -238,7 +238,7 @@
     .cert-item {
       flex: 1 1 45%;
       min-width: 180px;
-      padding: 6px 10px;
+      padding: 4px 10px;
       background: var(--bg-light);
       border-radius: 4px;
       border-left: 3px solid var(--accent);
@@ -276,7 +276,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 8px 12px;
+      padding: 4px 12px;
       background: var(--bg-light);
       border-radius: 4px;
       border-left: 3px solid var(--primary);
@@ -357,7 +357,7 @@
         Summary
       </h2>
       <p class="summary">
-        Full Stack Developer with 8+ years of experience building web and desktop applications.
+        Full Stack Developer with 8+ years of experience building web, mobile, and desktop applications.
         Skilled in Java, Python, and JavaScript ecosystems including Spring Boot, Django, React, and Flutter.
         Proven track record of delivering scalable enterprise solutions and improving production line efficiency.
       </p>
@@ -375,32 +375,59 @@
           <div class="job-date">April 2025 – Present</div>
         </div>
         <ul>
-          <li>Develop web applications and APIs using Grails, React, Spring Boot, and Vaadin</li>
-          <li>Build scalable full-stack solutions for enterprise clients</li>
+          <li>Core developer of an insurance quoting and policy-issuance platform (vehicle and personal lines): Spring Boot + Vaadin backend, Next.js/React frontend</li>
+          <li>Maintain and extend the company's core ERP (Grails) and its ecosystem, including a cross-platform Flutter POS for Windows, Android, and iOS</li>
+          <li>Built an internal AI gateway (Spring Boot) centralizing AI model calls; contributed to a digital-pass management platform</li>
+          <li>Ship app releases to the App Store, Play Store, and Microsoft Store (signing certificates, release management)</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-header">
-          <div class="job-title">Senior Software Developer · <span class="job-company">Clickping</span></div>
+          <div class="job-title">Software Developer · <span class="job-company">Clickping</span></div>
           <div class="job-date">2023 – 2025</div>
         </div>
         <ul>
-          <li>Built a hotel incident-management platform in Django/React, routing direct notifications to insurance partners</li>
-          <li>Maintainable, clean code architecture</li>
+          <li>Built a hotel incident-management platform (Django, Celery, Redis, MySQL) routing incident notifications directly to insurance partners, with PDF report generation (WeasyPrint)</li>
+          <li>Developed ITRS, a ticket request system: Django REST API with CI pipelines (GitHub Actions, mypy, Ruff)</li>
+          <li>Built an async Telegram bot (aiogram) for ticket management: create/edit/cancel/track tickets, employee shift check-in/check-out, file and location submission (Dockerized)</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-header">
-          <div class="job-title">Main Developer · <span class="job-company">Alterna</span></div>
+          <div class="job-title">Lead Developer · <span class="job-company">Alterna</span></div>
           <div class="job-date">2018 – 2023</div>
         </div>
         <ul>
-          <li>Created systems communicating with multiple Human Machine Interfaces (HMIs)</li>
-          <li>Increased production line performance and efficiency by 50%+ using Spring Boot, PostgreSQL, and MQTT</li>
-          <li>Developed desktop application for mall electricity management using Flutter and ASP.NET Core</li>
-          <li>Maintained and enhanced web applications managing production line lifecycles with React and ASP.NET Core</li>
+          <li>Built Fill-Click, a real-time production monitoring platform for juice/milk filling machines — React frontend, ASP.NET Core web backend, and a Spring Boot service ingesting machine/HMI data over MQTT (PostgreSQL): live sensor dashboards, alarm email notifications, preventive-maintenance life-hour tracking, and exportable production/waste/efficiency reports — improving line performance via early maintenance alerts</li>
+          <li>Extended Fill-Click with a Flutter mobile app for machine operators, integrated with the web backend</li>
+          <li>Developed a desktop/Android tablet utility-billing app (Flutter, ASP.NET Core backend) for mall electricity management: meter readings, consumption calculation, invoice generation with PDF rendering, pending-balance tracking, meter and contract management, multi-company support</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>
+        <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+        Projects
+      </h2>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Watch Insights</div>
+        </div>
+        <ul>
+          <li>Flutter companion app for a BLE smartwatch: reverse-engineered the proprietary BLE protocol (decompiled vendor SDK, BLE captures) after finding it silently uploaded ECG data to its cloud — rebuilt fully local, with live ECG waveform streaming, doctor-facing PDF export of ECG strips, and battery/charging-state inference</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Constellation</div>
+        </div>
+        <ul>
+          <li>Decentralized homelab hardware inventory and visual map in Go: one static binary per node, gossip-based sync between nodes, embedded web UI in TypeScript/React</li>
         </ul>
       </div>
     </div>
@@ -413,11 +440,11 @@
       <div class="skills-grid">
         <div class="skill-category">
           <div class="skill-category-title">Languages</div>
-          <div class="skill-list">Java, Python, JavaScript, TypeScript, Dart, SQL</div>
+          <div class="skill-list">Java, Python, JavaScript, TypeScript, Dart, Go, SQL</div>
         </div>
         <div class="skill-category">
           <div class="skill-category-title">Frameworks</div>
-          <div class="skill-list">Django, Spring Boot, React, Flutter, ASP.NET Core, Grails, Vaadin, Odoo, Frappe</div>
+          <div class="skill-list">Django, Spring Boot, React, Flutter, ASP.NET Core, Grails, Vaadin, Odoo</div>
         </div>
         <div class="skill-category">
           <div class="skill-category-title">Databases</div>
@@ -425,7 +452,7 @@
         </div>
         <div class="skill-category">
           <div class="skill-category-title">Tools</div>
-          <div class="skill-list">Docker, Git, GitHub Actions, MQTT, REST/WebSocket APIs</div>
+          <div class="skill-list">Docker, Git, GitHub Actions, MQTT, REST/WebSocket APIs, AI-assisted development (Claude Code)</div>
         </div>
       </div>
     </div>
